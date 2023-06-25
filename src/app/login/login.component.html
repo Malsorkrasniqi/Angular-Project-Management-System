@@ -1,6 +1,6 @@
 <mat-grid-list cols="2" rowHeight="100%">
     <mat-grid-tile>
-        <img src="https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=1380&t=st=1687597234~exp=1687597834~hmac=89921e7f0b6a162a96b9d438d1d264c82e49bedbdb2be8e5f5085def38bd30ee" alt="">
+        <img  class="" src="https://queue-it.com/media/ppcp1twv/product-drop.jpg" alt="">
     </mat-grid-tile>
     <mat-grid-tile>
         
@@ -39,12 +39,15 @@
               <div  *ngIf="this.isLoggedIn" class="alert alert-success" role="alert">
                 This is a success alert—check it out!
               </div>
+              <div  *ngIf="(!this.isLoggedIn) && (logInClicked)" class="alert alert-danger" role="alert">
+                {{errorMessage}}
+              </div>
               </form>
             </mat-card-content>
             <mat-card-actions>
 
               
-              <h4 class="text-danger">{{errorMessage}}</h4>
+              
             </mat-card-actions>
         </mat-card>
 

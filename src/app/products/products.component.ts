@@ -47,9 +47,13 @@ export class ProductsComponent {
     /* we are using index to reference element and element to get the element to edit */
     let config:MatDialogConfig = new MatDialogConfig();
     config.data = element;
-    this.dialog.open(AddProductDialogComponent,config).afterClosed().subscribe(element=>{
-      this.dataSource[index]=element;
-      this.dataSource=[...this.dataSource];
+    this.dialog.open(AddProductDialogComponent,config).afterClosed().subscribe(newvalue=>{
+      /* debugger; */
+      if(newvalue)
+      {
+        this.dataSource[index]=newvalue;
+        this.dataSource=[...this.dataSource];
+      }
     })
   }
 }

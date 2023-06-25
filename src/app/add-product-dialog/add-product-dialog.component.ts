@@ -24,7 +24,10 @@ export class AddProductDialogComponent {
     public dialogRef: MatDialogRef<AddProductDialogComponent>,
     @Inject(MAT_DIALOG_DATA) data: any
   ) {
-    this.entity = data;
+    if(data){
+      this.entity = data;
+      this.entity.Date = new Date(data.Date);
+    }
   }
 
   ngOnInit(){

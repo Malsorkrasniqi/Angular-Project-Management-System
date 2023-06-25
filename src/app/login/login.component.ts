@@ -3,7 +3,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { AuthService } from '../Auth/auth.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { timer } from 'rxjs';
 
 
 
@@ -21,6 +20,7 @@ export class LoginComponent {
   errorMessage: string = '';
   successMessage: string = '';
   isLoggedIn: boolean = false;
+  logInClicked:boolean = false;
   
 
   constructor(
@@ -44,12 +44,14 @@ export class LoginComponent {
     
 
     const isAuth = this.authService.login(this.loginForm.get('email')?.value,this.loginForm.get('password')?.value);
-
+    this.logInClicked=true;
     if (isAuth) {
       this.isLoggedIn=true;
-      timer(1000).subscribe(() => {
+      setTimeout(()=>{
         this.router.navigate(['home'])
-    })
+      }
+        ,1000
+      )
       
     } else {
       this.errorMessage = 'Incorrect Username or Password';
