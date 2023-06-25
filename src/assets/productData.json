@@ -1,0 +1,104 @@
+[
+    {
+      "name": "Cotton T-shirt",
+      "category": "Clothing",
+      "price": 19.99,
+      "date": "2023-06-01"
+    },
+    {
+      "name": "Wireless Earphones",
+      "category": "Electronics",
+      "price": 49.99,
+      "date": "2023-06-02"
+    },
+    {
+      "name": "Leather Wallet",
+      "category": "Accessories",
+      "price": 29.99,
+      "date": "2023-06-03"
+    },
+    {
+      "name": "Running Shoes",
+      "category": "Footwear",
+      "price": 79.99,
+      "date": "2023-06-04"
+    },
+    {
+      "name": "Digital Camera",
+      "category": "Electronics",
+      "price": 249.99,
+      "date": "2023-06-05"
+    },
+    {
+      "name": "Classic Watch",
+      "category": "Accessories",
+      "price": 99.99,
+      "date": "2023-06-06"
+    },
+    {
+      "name": "Denim Jeans",
+      "category": "Clothing",
+      "price": 39.99,
+      "date": "2023-06-07"
+    },
+    {
+      "name": "Smartphone",
+      "category": "Electronics",
+      "price": 699.99,
+      "date": "2023-06-08"
+    },
+    {
+      "name": "Sunglasses",
+      "category": "Accessories",
+      "price": 49.99,
+      "date": "2023-06-09"
+    },
+    {
+      "name": "Hiking Boots",
+      "category": "Footwear",
+      "price": 119.99,
+      "date": "2023-06-10"
+    },
+    {
+      "name": "Graphic T-shirt",
+      "category": "Clothing",
+      "price": 24.99,
+      "date": "2023-06-11"
+    },
+    {
+      "name": "Bluetooth Speaker",
+      "category": "Electronics",
+      "price": 79.99,
+      "date": "2023-06-12"
+    },
+    {
+      "name": "Leather Handbag",
+      "category": "Accessories",
+      "price": 89.99,
+      "date": "2023-06-13"
+    },
+    {
+      "name": "Casual Sneakers",
+      "category": "Footwear",
+      "price": 59.99,
+      "date": "2023-06-14"
+    },
+    {
+      "name": "Wireless Mouse",
+      "category": "Electronics",
+      "price": 29.99,
+      "date": "2023-06-15"
+    },
+    {
+      "name": "Printed Scarf",
+      "category": "Accessories",
+      "price": 19.99,
+      "date": "2023-06-16"
+    },
+    {
+      "name": "Sports Bra",
+      "category": "Clothing",
+      "price": 34.99,
+      "date": "2023-06-17"
+    }
+]

@@ -1,0 +1,56 @@
+<section class="main">
+  <div class="input">
+    <form [formGroup]="form">
+
+      <mat-form-field appearance="outline">
+        <!-- loose -->
+        <mat-label>Name</mat-label>
+        <input matInput type="text" formControlName="productName"/>
+        <mat-error *ngIf="form.controls.productName.hasError('required')">The name field is required</mat-error>
+      </mat-form-field>
+      <!-- <label for="name">Name: </label>
+      <input matInput id="name" type="text" formControlName="productName" /> -->
+
+      <mat-form-field appearance="outline">
+        <mat-label>Category</mat-label>
+        <mat-select formControlName="Category">
+          <mat-option *ngFor="let category of categories" [value]="category">
+            {{category}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <!-- <label for="name">Category: </label>
+      <input matInput id="name" type="text" formControlName="Category" /> -->
+
+      <mat-form-field appearance="outline">
+        <mat-label>Price</mat-label>
+        <input matInput type="text" formControlName="Price"/>
+      </mat-form-field>
+
+      <!-- <label for="name">Price: </label>
+      <input matInput id="name" type="text" formControlName="Price" /> -->
+
+      <mat-form-field appearance="outline">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="Date">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      
+
+      <!-- <mat-form-field appearance="outline">
+        <mat-label>Date</mat-label>
+        <input matInput type="text" formControlName="Date"/>
+      </mat-form-field> -->
+
+      <!-- <label for="name">Date: </label>
+      <input matInput id="name" type="text" formControlName="Date" /> -->
+    </form>
+  </div>
+  <div class="action-container">
+    <button mat-raised-button (click)="cancel()">Cancel </button>
+    <button mat-raised-button color="primary" (click)="save()">Save </button>
+  </div>
+</section>
